@@ -34,10 +34,11 @@ main{
   background-color: #ccc;
   /* DEBUG:  */
 
+  height: calc(100vh - 100px);
   margin-left: 230px;
-  margin-bottom: 100px;
 
-  overflow-y: hidden;
+
+  overflow-y: scroll;
   display: flex;
   justify-content: center;
 
