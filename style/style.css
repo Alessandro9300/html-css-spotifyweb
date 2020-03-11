@@ -14,21 +14,8 @@ a:hover{
   color: white;
 }
 
-/* STRUTTURA ASIDE */
 
-.menu{
-  /* DEBUG:  */
-  border: black solid;
-  /* DEBUG:  */
-  height: calc(100vh - 100px);
-  width: 230px;
-  position: fixed;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
 
-}
 
 /* STRUTTURA MAIN */
 
@@ -52,7 +39,7 @@ main{
 .upgrade{
   /* DEBUG:  */
   background-color: purple;
-  opacity: 0.8;
+  /* DEBUG:  */
 
   height: 100px;
   width: 100%;
@@ -60,6 +47,7 @@ main{
   top: 0;
   right: 0;
   left: 230px;
+  opacity: 0.8;
 
 }
 
@@ -85,7 +73,7 @@ footer{
   width: 100vw;
   bottom: 0;
   left: 0;
-  overflow-y: auto;
+
 }
 
 
@@ -94,16 +82,71 @@ footer{
 
 /* STYLE */
 
+/* STRUTTURA ASIDE */
+
+.menu{
+
+  height: calc(100vh - 100px);
+  width: 230px;
+  position: fixed;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 /* style aside */
+
+.aside-top{
+
+  /* DEBUG:  */
+  border: solid white;
+}
 
 .menu img{
   width: 70%;
 }
 
-.menu > ul{
+.aside-top > ul{
   margin-top: 20px;
+
+
 }
 
 .menu-li{
-  padding: 5px 0;
+  padding: 8px 0;
+  list-style-type: none;
+}
+
+
+
+.play-tit{
+  margin: 10px 0;
+}
+
+.play-list-menu > ul {
+
+}
+
+.box{
+
+  border: solid;
+  width: 30px;
+  height: 30px;
+
+}
+
+.app{
+  border-bottom: solid grey 1px;
+  padding-bottom: 6px;
+}
+
+.song{
+  padding-top: 6px;
+}
+
+.overflow{
+  overflow-y: hidden;
 }
