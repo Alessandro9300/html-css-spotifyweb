@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.menu{
+  /* DEBUG:  */
+  border: black solid;
+  /* DEBUG:  */
+  height: calc(100vh - 100px);
+  width: 230px;
+  position: fixed;
+}
+
+footer{
+  /* DEBUG:  */
+  border: red solid;
+  background: black;
+  /* DEBUG:  */
+
+  position: fixed;
+  height: 100px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+main{
+  /* DEBUG:  */
+  border: green solid;
+  background-color: #ccc;
+  /* DEBUG:  */
+
+  margin-left: 230px;
+  margin-bottom: 100px;
+
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.box{
+  width: 200px;
+  height: 2000px;
+  border: solid blue;
+  margin: 10px;
+}
