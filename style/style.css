@@ -101,8 +101,7 @@ footer{
 
 .aside-top{
 
-  /* DEBUG:  */
-  border: solid white;
+
 }
 
 .menu img{
@@ -145,8 +144,4 @@ footer{
 
 .song{
   padding-top: 6px;
-}
-
-.overflow{
-  overflow-y: hidden;
 }
