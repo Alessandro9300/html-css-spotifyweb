@@ -114,7 +114,7 @@ footer{
 .upgrade{
   background-color: rgba(0, 0, 0, 0.4);
   height: 100px;
-  width: calc(100%-230px);
+  width: calc(100% - 230px);
   position: fixed;
   top: 0;
   right: 0;
@@ -164,6 +164,7 @@ main{
 .nav-menu ul{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .songs{
@@ -174,23 +175,51 @@ main{
 }
 
 .box-songs{
-  /* DEBUG:  */
-  /* border: solid white 2px;
-  min-height: 200px; */
-  /* DEBUG:  */
-  flex-basis: calc(100% / 6);
-  padding: 0 20px;
-  text-align: center;
+
+  /* flex-basis: calc(100% / 6); */
+  /* padding: 0 20px; */
+  position: relative;
+  margin: 0 auto;
 
 }
 
 .box-img{
   width: 100%;
-  height: 100%;
-  /* border: solid red; */
 }
 
-/* style main */
+.img-hover{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  /* width: 100%;
+  height: 100%; */
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+  width:  300px;
+  height: 300px;
+
+}
+
+.img-hover:hover{
+  opacity: 1;
+}
+
+
+.titoli-songs{
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.titoli-songs a{
+  font-size: 12px;
+}
+
+
 
 .nav-li{
   margin-top: 20px;
