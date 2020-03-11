@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+/* REGOLE GENERALI */
+a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+a:hover{
+  color: white;
+}
+
+/* STRUTTURA ASIDE */
 
 .menu{
   /* DEBUG:  */
@@ -12,21 +23,14 @@
   height: calc(100vh - 100px);
   width: 230px;
   position: fixed;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
 }
 
-footer{
-  /* DEBUG:  */
-  border: red solid;
-  background: black;
-  /* DEBUG:  */
-
-  position: fixed;
-  height: 100px;
-  width: 100vw;
-  bottom: 0;
-  left: 0;
-  overflow-y: auto;
-}
+/* STRUTTURA MAIN */
 
 main{
   /* DEBUG:  */
@@ -45,9 +49,61 @@ main{
 
 }
 
-.box{
-  width: 200px;
+.upgrade{
+  /* DEBUG:  */
+  background-color: purple;
+  opacity: 0.8;
+
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 230px;
+
+}
+
+.cont-menu{
+  width: 100%;
   height: 2000px;
   border: solid blue;
-  margin: 10px;
+  margin-top: 100px;
+}
+
+
+
+/* STRUTTURA PLAYER */
+
+footer{
+  /* DEBUG:  */
+  border: red solid;
+  background: black;
+  /* DEBUG:  */
+
+  position: fixed;
+  height: 100px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+
+
+
+
+/* STYLE */
+
+/* style aside */
+
+.menu img{
+  width: 70%;
+}
+
+.menu > ul{
+  margin-top: 20px;
+}
+
+.menu-li{
+  padding: 5px 0;
 }
