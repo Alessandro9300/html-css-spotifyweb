@@ -28,15 +28,6 @@ body{
 
 /* STRUTTURA PLAYER */
 
-footer{
-  background: #282828;
-  position: fixed;
-  height: 100px;
-  width: 100vw;
-  bottom: 0;
-  left: 0;
-
-}
 
 
 
@@ -256,4 +247,147 @@ main img{
 
 .radius-img{
   border-radius: 100%;
+}
+
+/* Fine main */
+
+
+/* FOOTER PLAYER */
+
+/* DEBUG:  */
+.player > div {
+  min-width: 200px;
+  min-height: 50px;
+  border: solid white;
+}
+/* DEBUG:  */
+
+
+footer{
+  background: #282828;
+  position: fixed;
+  height: 100px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+}
+
+.player{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+
+/* left-player */
+
+.left-player{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  justify-content: space-between;
+}
+
+.left-player img{
+  width: 45px;
+  height: 100%;
+}
+
+.left-players-titles{
+  margin-left: -10px;
+  line-height: 1.2;
+  font-size: 13px;
+}
+
+#big-tit{
+  color: white;
+  font-weight: 600;
+}
+
+#lit-ico{
+  margin-left: 5px;
+}
+
+
+/* cent-player */
+
+.cent-player{
+  height: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.buttons-player ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-player ul li{
+  padding: 0 15px;
+  font-size: 20px;
+}
+.buttons-player ul li:hover{
+  cursor: pointer;
+}
+
+#cent-ico{
+  font-size: 35px;
+}
+
+#cent-ico:hover{
+  transform: scale(1.2);
+}
+
+.barra-progress{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 11px;
+  margin-top: 10px;
+  position: relative;
+
+}
+
+.prog-bar{
+  width: 88%;
+  height: 4px;
+  background-color: grey;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.prog-bar-hover{
+  width: 33%;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 4px;
+  border-radius: 10px;
+}
+
+.bar-point{
+  position: absolute;
+  left: 34%;
+  bottom: 0.5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: white;
+  display: none;
+
+}
+
+.prog-bar:hover .bar-point{
+  display: block;
+}
+
+.prog-bar:hover .prog-bar-hover{
+  background-color: greenyellow;
 }
