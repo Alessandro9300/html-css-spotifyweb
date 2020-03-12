@@ -223,7 +223,7 @@ main img{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3.5vw;
+  font-size: 75px;
 
 
 }
@@ -315,8 +315,8 @@ footer{
   margin-left: 20px;
   display: flex;
   align-items: center;
-  width: 220px;
-  justify-content: space-between;
+  flex-basis: 220px;
+  justify-content: space-around;
 }
 
 .left-player img{
@@ -325,7 +325,6 @@ footer{
 }
 
 .left-players-titles{
-  margin-left: -10px;
   line-height: 1.2;
   font-size: 13px;
 }
@@ -335,7 +334,7 @@ footer{
   font-weight: 600;
 }
 
-#lit-ico{
+.lit-ico{
   margin-left: 5px;
 }
 
@@ -347,7 +346,8 @@ footer{
   padding: 10px 0;
   display: flex;
   flex-direction: column;
-  width: 35%;
+  flex-basis: 800px;
+  margin: 0 15px;
 }
 
 .buttons-player ul{
@@ -448,13 +448,36 @@ footer{
 
 
 /* MEDIA QUERY */
-
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1600px){
 
   .songs{
     flex-wrap: wrap;
     padding: 0 10px;
   }
+
+  .box-songs{
+    flex-basis: calc(100% / 5);
+    padding: 0 5px;
+  }
+
+
+}
+
+@media screen and (max-width: 1400px){
+
+
+  .box-songs{
+    flex-basis: calc(100% / 4);
+    padding: 0 5px;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1200px){
+
 
   .box-songs{
     flex-basis: calc(100% / 3);
@@ -465,20 +488,18 @@ footer{
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 850px){
 
-  .songs{
-    flex-wrap: wrap;
-  }
 
   .box-songs{
     flex-basis: calc(100% / 2);
   }
 
 
+
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 650px){
 
   .aside-top{
     display: none;
@@ -509,4 +530,15 @@ footer{
   .query-side{
     display: flex;
   }
+
+
+}
+
+@media screen and (max-width: 450px){
+
+
+  .box-songs{
+    flex-basis: 100%;
+  }
+
 }
