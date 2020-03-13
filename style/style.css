@@ -38,7 +38,18 @@ body{
   flex-direction: column;
 }
 
+.aside-top{
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
 /* style aside */
+
+.scroll-ul{
+  overflow-y: auto;
+}
 
 .aside-top img{
 width: 30px;
@@ -104,6 +115,8 @@ margin-right: 10px;
   padding-top: 6px;
   font-weight: 600;
 }
+
+
 
 
 
