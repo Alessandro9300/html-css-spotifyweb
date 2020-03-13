@@ -44,19 +44,29 @@ body{
 
 /* style aside */
 
-.aside-top{
-
-
+.aside-top img{
+width: 30px;
+height: 30px;
+margin-right: 10px;
 }
 
-.menu img{
-  width: 70%;
+.menu a{
+  font-size: 12px;
+}
+
+.aside-anc{
+  display: flex;
+  align-items: center;
+}
+
+#spot-logo{
+  width: 133px;
+  height: 50px;
+  margin: 0;
 }
 
 .aside-top > ul{
-  margin-top: 20px;
-
-
+  margin-top: 10px;
 }
 
 .menu-li{
@@ -67,7 +77,23 @@ body{
 
 
 .play-tit{
-  margin: 10px 0;
+  margin: 15px 0 0 0;
+}
+
+.before-tit{
+  display: flex;
+  align-items: center;
+}
+
+.before-tit::before{
+  content: "+";
+  width: 40px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 35px;
+  color: black;
+
 }
 
 .play-list-menu > ul {
@@ -85,10 +111,17 @@ body{
 .app{
   border-bottom: solid grey 1px;
   padding-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .song{
   padding-top: 6px;
+  font-weight: 600;
+}
+
+.aside-bot img{
+  width: 25px;
+  margin-right: 12px;
 }
 
 
@@ -113,6 +146,12 @@ body{
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  display: inline-block;
+}
+
+#large-prof{
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 #img-ico-prof{
